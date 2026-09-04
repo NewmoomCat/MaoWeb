@@ -1,0 +1,129 @@
+/* 全局：让 body 透明，窗口居中 */
+body {
+    background-image: url('/requires/static/img/reisa_suzumi.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+}
+
+/* 终端窗口 - 半透明 Catppuccin Mocha 背景 */
+.terminal-window {
+    width: 85vw;
+    max-width: 1000px;
+    height: 80vh;
+    background: rgba(30, 30, 46, 0.62);        /* #1e1e2e 半透明 */
+    border-radius: 14px;
+    border: 1px solid #94e2d5;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* 标题栏 - Catppuccin Surface 颜色 */
+.window-header {
+    background: rgba(49, 50, 68, 0.6);      /* #313244 半透明 */
+    padding: 10px 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid rgba(205, 214, 244, 0.08);
+    flex-shrink: 0;
+    user-select: none;
+}
+
+/* 窗口按钮 - 使用 Catppuccin 颜色 */
+.window-btn {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: opacity 0.2s;
+}
+.window-btn.close    { background: #f38ba8; }   /* 红 */
+.window-btn.minimize { background: #f9e2af; }   /* 黄 */
+.window-btn.maximize { background: #94e2d5; }   /* 青 */
+
+.window-title {
+    margin-left: 12px;
+    color: #a6adc8;              /* 子文本颜色 */
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+}
+
+/* 窗口主体 - 滚动区域 */
+.window-body {
+    flex: 1;
+    padding: 24px 28px;
+    overflow-y: auto;
+    color: #cdd6f4;              /* 主要文本 */
+    font-size: 16px;
+    line-height: 1.7;
+    background: transparent;     /* 继承父级半透明 */
+}
+
+/* 滚动条 - Catppuccin 风格 */
+.window-body::-webkit-scrollbar {
+    width: 6px;
+}
+.window-body::-webkit-scrollbar-track {
+    background: rgba(205, 214, 244, 0.05);
+}
+.window-body::-webkit-scrollbar-thumb {
+    background: rgba(137, 180, 250, 0.4);   /* 蓝色半透明 */
+    border-radius: 4px;
+}
+.window-body::-webkit-scrollbar-thumb:hover {
+    background: #89b4fa;
+}
+
+/* 链接 - 使用 Catppuccin 蓝色 */
+.window-body a {
+    color: #89b4fa;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.window-body a:hover {
+    color: #1e1e2e;
+    background: #89b4fa;
+    border-radius: 2px;
+    padding: 0 2px;
+}
+
+.righter {
+    position: absolute;
+    bottom: 20px;              /* 离底部距离 */
+    right: 28px;               /* 离右侧距离 */
+    color: #55FFFF;           /* 子文本颜色 */
+    font-size: 14px;
+    opacity: 0.8;
+    pointer-events: none;      /* 避免干扰点击（可选） */
+}
+
+/* 模拟终端提示符 - 使用 Catppuccin 绿/粉 */
+.prompt {
+    color: #a6e3a1;              /* 绿色 */
+}
+.prompt::before {
+    content: '$ ';
+    color: #f5c2e7;              /* 粉色 */
+}
+
+/* 可选：代码块或预格式化文本保持一致性 */
+pre, code {
+    color: #cdd6f4;
+    background: rgba(49, 50, 68, 0.4);
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-family: inherit;
+}
+pre {
+    padding: 12px;
+    overflow-x: auto;
+}

@@ -89,7 +89,7 @@ $htmlContent = $parsedown->text($markdown);
     </style>
 </head>
 <body>
-    <?php echo $htmlContent; ?><br>
+    <?php echo($htmlContent) ?><br>
     <a href="index.php">Back to Index</a>
 </body>
 </html>
