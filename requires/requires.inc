@@ -1,5 +1,12 @@
 <?php
 
+/** 验证PHP版本 */
+if (version_compare("8.0", PHP_VERSION) > 0) {
+    echo "You must use PHP < 8.0" . PHP_EOL;
+    exit(1);
+}
+
+
 class Index {
     const Text = "博客内容在下面";
 
