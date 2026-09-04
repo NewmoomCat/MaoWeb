@@ -1,6 +1,6 @@
 <?php
 // 引入 Parsedown 类
-require_once('requires/mdload.inc');
+require_once 'requires/mdload.inc' ;
 
 // 文章存储目录（注意末尾斜杠）
 $baseDir = __DIR__ . '/requires/post/';
@@ -91,5 +91,6 @@ $htmlContent = $parsedown->text($markdown);
 <body>
     <?php echo($htmlContent) ?><br>
     <a href="index.php">Back to Index</a>
+    <div style="position: absolute;right: 30px;">&copy; 2026 XinYueNeko</div>
 </body>
 </html>

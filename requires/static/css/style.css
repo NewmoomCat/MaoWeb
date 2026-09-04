@@ -101,7 +101,7 @@ body {
     bottom: 20px;              /* 离底部距离 */
     right: 28px;               /* 离右侧距离 */
     color: #55FFFF;           /* 子文本颜色 */
-    font-size: 14px;
+    font-size: 19px;
     opacity: 0.8;
     pointer-events: none;      /* 避免干扰点击（可选） */
 }

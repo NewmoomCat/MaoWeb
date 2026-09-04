@@ -9,8 +9,8 @@ class Index {
     ];
 }
 
-(array) $random_name = Index::HelloTexts[strtolower(array_rand(Index::HelloTexts))];
+$random_name = Index::HelloTexts[strtolower(array_rand(Index::HelloTexts))];
 
-(string) $b1_name = '关于猫猫服';
-(string) $b2_name = 'Minecraft:PE 正式版 0.9 ~ 1.1协议内容';
-(string) $about_me = "关于我";
+$b1_name = '关于猫猫服';
+$b2_name = 'Minecraft:PE 正式版 0.9 ~ 1.1协议内容';
+$about_me = "关于我";
