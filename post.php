@@ -1,6 +1,6 @@
 <?php
 // 引入 Parsedown 类
-require_once 'requires/mdload.php';
+require_once('requires/mdload.inc');
 
 // 文章存储目录（注意末尾斜杠）
 $baseDir = __DIR__ . '/requires/post/';
@@ -9,7 +9,7 @@ $baseDir = __DIR__ . '/requires/post/';
 $articleMap = [
     1 => 'maomao_server_about.md',
     2 => 'minecraft_pe_release_protocols.md',
-    3 => 'b.md',
+    3 => 'about_me.md',
     // 继续添加...
 ];
 
