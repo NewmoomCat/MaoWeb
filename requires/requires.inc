@@ -20,4 +20,6 @@ $random_name = Index::HelloTexts[strtolower(array_rand(Index::HelloTexts))];
 
 $b1_name = '关于猫猫服';
 $b2_name = 'Minecraft:PE 正式版 0.9 ~ 1.1协议内容';
+$b3_name = '什么是MatchaCake';
+
 $about_me = "关于我";

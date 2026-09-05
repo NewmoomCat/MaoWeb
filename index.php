@@ -22,7 +22,7 @@
                 <p>重新用PHP写了一版</p>
                 <p><?php echo(Index::Text) ?></p>
                 
-                <a href="post.php?page=3"><?php echo($about_me) ?></a>
+                <a href="post.php?page=0"><?php echo($about_me) ?></a>
                 
                 <ul>
                     <h4>文章列表</h4>
@@ -31,6 +31,9 @@
                     </li>
                     <li>
                         <a href="post.php?page=2"><?php echo($b2_name) ?></a><br>
+                    </li>
+                    <li>
+                        <a href="post.php?page=3"><?php echo($b3_name) ?></a>
                     </li>
                 </ul>
                 <br>

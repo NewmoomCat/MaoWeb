@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<img src="/requires/static/img/tx.jpg" style="width: 250px; height: 250px; border-radius: 50%;">
+<img src="/requires/static/img/tx.jpg" alt="neko" style="width: 250px; height: 250px; border-radius: 50%;">
 
 
 <p>已经上高中了，爱好编程</p>

@@ -7,10 +7,10 @@ $baseDir = __DIR__ . '/requires/post/';
 
 // 文章 ID → 文件名 映射
 $articleMap = [
+    0 => 'about_me.md',
     1 => 'maomao_server_about.md',
     2 => 'minecraft_pe_release_protocols.md',
-    3 => 'about_me.md',
-    // 继续添加...
+    3 => 'about_matcha_cake.md',
 ];
 
 // 获取并校验 page 参数
